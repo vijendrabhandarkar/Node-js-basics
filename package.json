@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "axios": "^0.24.0",
+    "validator": "^13.7.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "basics",
+  "version": "1.0.0",
+  "description": "studying node js",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vijendrabhandarkar/TempFolder.git"
+  },
+  "author": "vijendra",
+  "license": "ISC"
+}
