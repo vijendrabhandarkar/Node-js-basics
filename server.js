@@ -3,7 +3,7 @@ const http = require("http");
 const server = http.createServer((request, response) => {
   //console.log("request",request);
   //Note : Please reload to get the proper response
-  console.log("response", response);
+  console.log("response-------", response);
   response.end("Welcome to Node js");
 });
 

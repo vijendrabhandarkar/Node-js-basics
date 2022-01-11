@@ -11,6 +11,7 @@ http.createServer((request,response)=>{
     response.write("Welcome")
     response.write(JSON.stringify(reqUrl.query))
     // response.end("Hello ......")
+    // console.log("url :::::!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",request.url);
     response.end()
 }).listen(2000,()=>{
     console.log("server is listening on port 2000");

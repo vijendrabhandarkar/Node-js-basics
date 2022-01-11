@@ -2,6 +2,7 @@ const http=require("http")
 const fs=require("fs")
 
 http.createServer((req,res)=>{
+    //here req.url considers entire pathname as well as query string and the fragment
     if (req.url==='/'&&req.method==="GET") {
         fs.readFile("./asyncview/view.txt",(err,data)=>{
             if (err) {
@@ -20,9 +21,11 @@ http.createServer((req,res)=>{
         })
     } else {
         res.writeHead(404,{
-            'content-type':'text/html' 
+            'content-type':'text/plain' 
         })
         res.end("Invalied path or invalied HTTP method")
     }
     
-}).listen(2000)
+}).listen(2000,()=>{
+    console.log("server is listening on port 2000");
+})

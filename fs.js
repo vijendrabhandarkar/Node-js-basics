@@ -17,7 +17,7 @@ fs.writeFileSync('demo/test.txt','Hello World.............')
 
 if(fs.existsSync('demo/test.txt')){
     const data=fs.readFileSync("demo/test.txt")
-    console.log(data);
+    console.log(data);//buffered data
     console.log(data.toString());
 }
 

@@ -3,7 +3,7 @@ console.log("Program started");
 const fs=require("fs");
 
 const readStream=fs.createReadStream("./asyncview/view.txt",{
-    highWaterMark: 128*10
+    highWaterMark: 128
 })
 
 let readData=""

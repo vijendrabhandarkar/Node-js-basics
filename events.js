@@ -55,6 +55,8 @@ eventEmitter.emit("myEvent","executed once")
 eventEmitter.emit("myEvent","executed once")
 
 const eventNames=eventEmitter.eventNames()
+//eventNames()-->gets all the eventListers releted to the event, in an array
+
 console.log('eventNames',eventNames);
 
 console.log("Program Ended");
